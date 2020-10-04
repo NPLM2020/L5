@@ -16,12 +16,8 @@ public class Person {
         this.position = position;
         this.email = email;
         this.phoneNumber = phoneNumber;
-        if (salary >= 0) {
-            this.salary = salary;
-        } else this.salary = 0;
-        if (age >= 0) {
-            this.age = age;
-        } else this.age = 0;
+        if (salary >= 0) this.salary = salary;
+        if (age >= 0) this.age = age;
     }
 
     public int getAge() {
@@ -34,5 +30,6 @@ public class Person {
                         "Age: %s\nEmail: %s\nPhone number: %s\nSalary: %s\n",
                 fullName, position, age, email, phoneNumber, salary);
     }
+
 
 }
